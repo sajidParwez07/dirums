@@ -1,0 +1,60 @@
+
+
+.containers{
+    margin-top: 50px;
+    margin-left: 20%;
+    position: relative;
+    max-width: 700px;
+    width: 100%;
+    background: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.termscondition {
+    margin-left: 10%;
+    width: 80%;
+    height: 200px;
+    overflow-y: scroll;
+}
+
+h3 {
+    text-align: center;
+    color: red;
+    margin-bottom: 20px;
+}
+
+#button {
+    margin-top: 20px;
+    margin-left: 30%;
+    height: 55px;
+    width: 40%;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background: green;
+    border-radius: 8px;
+}
+
+button:hover{
+    background: rgb(4, 179, 4);
+}
+
+.checked {
+    margin-top: 20px;
+    margin-left: 30%;
+}
+
+[type="radio"] {
+    height: 20px;
+    width: 20px;
+    margin-right: 20px;
+}
+
+#checkbox{
+    accent-color: blue;
+}

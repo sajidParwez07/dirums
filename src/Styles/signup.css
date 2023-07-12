@@ -1,0 +1,178 @@
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+#body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: black;
+}
+
+.container {
+    position: relative;
+    max-width: 700px;
+    width: 100%;
+    background: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.container header {
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: 500;
+    text-align: center;
+    margin-right: 50px;
+}
+
+.image{
+    margin-left: 30%;
+}
+
+.image img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #dfdfdf;
+}
+
+.container .form {
+    margin-top: 30px;
+}
+
+.otpbutton{
+    width: 20%;
+    height: 5%;
+}
+
+.form .input-box {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.input-box label {
+    color: #333;
+}
+
+.form .input-box .otp{
+    position: absolute;
+    right: 50px;
+    margin-top: 18px;
+    padding: 3px;
+    border: none;
+    border-radius: 2px;
+}
+
+.form .input-box .otp:hover{
+    color: white;
+    background-color: blue;
+}
+
+.form :where(.input-box input, .select-box) {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    outline: none;
+    font-size: 1rem;
+    color: #707070;
+    margin-top: 8px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 0 15px;
+}
+
+.input-box input:focus {
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.form .column {
+    display: flex;
+    column-gap: 15px;
+}
+
+.form .check-box {
+    margin-top: 20px;
+}
+
+.check-box h3 {
+    color: #333;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+
+.form :where(.check-option, .check) {
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+    flex-wrap: wrap;
+}
+
+.form .check {
+    column-gap: 5px;
+}
+
+.check input {
+    accent-color: blue;
+}
+
+.form :where(.check input, .check label) {
+    cursor: pointer;
+}
+
+.check label {
+    color: #707070;
+}
+
+.address :where(input, .select-box) {
+    margin-top: 15px;
+}
+
+.select-box select {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    color: #707070;
+    font-size: 1rem;
+}
+
+.form .submit {
+    height: 55px;
+    width: 100%;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 30px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background: green;
+    border-radius: 8px;
+}
+
+.form .submit:hover {
+    background: rgb(4, 179, 4);
+}
+
+/*Responsive*/
+@media screen and (max-width: 500px) {
+    .form .column {
+        flex-wrap: wrap;
+    }
+
+    .form :where(.gender-option, .gender) {
+        row-gap: 15px;
+    }
+}
